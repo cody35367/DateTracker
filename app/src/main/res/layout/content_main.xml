@@ -7,24 +7,37 @@
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         tools:showIn="@layout/activity_main"
-        tools:context=".MainActivity" android:background="@drawable/main_background">
+        tools:context=".MainActivity" android:background="@color/mainBackground">
     <ScrollView
-            android:layout_width="395dp"
-            android:layout_height="659dp"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" android:id="@+id/scrollView"
-            android:background="@drawable/main_background">
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/scrollView"
+            android:background="@color/mainBackground"
+            app:layout_constraintBottom_toTopOf="@+id/navView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintTop_toTopOf="parent">
         <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
                       android:orientation="vertical"/>
     </ScrollView>
     <Button
             android:text="+"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:id="@+id/addBtn"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp"
-            app:layout_constraintBottom_toBottomOf="parent" android:textSize="36sp" android:textStyle="bold"
-            android:textColor="@android:color/white" android:background="@drawable/roundedbutton"/>
+            android:textSize="36sp" android:textStyle="bold"
+            android:textColor="@drawable/state_colors_text_press"
+            android:background="@drawable/state_colors_round_press"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toTopOf="@+id/navView" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="24dp" android:layout_marginRight="24dp"/>
+    <android.support.design.widget.BottomNavigationView
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/navView" app:menu="@menu/menu_nav" app:itemTextColor="@drawable/state_colors_active"
+            android:background="@color/bannerBackground" app:itemIconTint="@drawable/state_colors_active"
+    />
 </android.support.constraint.ConstraintLayout>

@@ -3,4 +3,9 @@
     <color name="colorPrimary">#222222</color>
     <color name="colorPrimaryDark">#222222</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="bannerBackground">#222222</color>
+    <color name="mainBackground">#444444</color>
+    <color name="mainForeground">#FFFFFF</color>
+    <color name="btnPressed">#000000</color>
+    <color name="btnNotPressed">#333333</color>
 </resources>

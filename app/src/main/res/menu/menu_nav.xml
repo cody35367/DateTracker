@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/action_countdown" android:id="@+id/action_countdown"
+          android:icon="@android:drawable/ic_lock_idle_alarm"/>
+    <item android:title="@string/action_recurring" android:id="@+id/action_recurring"
+          android:icon="@android:drawable/stat_notify_sync_noanim"/>
+</menu>

@@ -5,7 +5,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".SettingsMenu" android:background="@drawable/main_background">
+        tools:context=".SettingsMenu" android:background="@color/mainBackground">
 
     <TextView
             android:text="Settings Menu"
